@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>ジャストクリックゲーム</title>
+    <meta name="description" content="数字に合わせてタイミングよくクリックして遊ぶゲームです。">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <div class="wrapper">
+        <form id="form">
+        <select name="select">
+            <option value="index.html">easy mode</option>
+            <option value="index-normal.html">normal mode</option>
+            <option value="index-hard.html">hard mode</option>
+        </select>
+        </form>
+   
+        <div class="main">
+            <h1>Just Click GAME</h1>
+            <h2>- normal mode -</h2>
+            <p class="text">
+            スタートボタンを押して、上に表示される数字と同じ数字が出たタイミングでストップボタンを押してください。<br>
+            ノーマルモードは100ミリ秒単位で数字が回ります。<br>
+            5回のうち3回以上、数字を合わせられたら合格です。
+            </p>
+
+            <p id="specified">?</p>
+            <div id="timer">0</div>
+            <button id="start">start</button>
+            <button id="stop">stop</button>
+
+            <table>
+                <tr><th>1回目</th><th>2回目</th><th>3回目</th><th>4回目</th><th>5回目</th><th>合否</th></tr>
+                <tr id="score"><td>　</td><td>　</td><td>　</td><td>　</td><td>　</td><td>　</td></tr>
+            </table>
+        </div>
+        
+        <div class="reference">
+       <p>
+        ※タイマーの原理は下記を参考<br>
+        javascriptでストップウォッチを作ってみる。忘備録<br>
+        <a href="https://qiita.com/ryomaDsakamoto/items/c49a9d4cd2017405af1b">
+        https://qiita.com/ryomaDsakamoto/items/c49a9d4cd2017405af1b
+        </a>
+        </p>
+        </div>
+    </div>
+    
+    <script src="js/normal.js"></script>
+</body>
+</html>

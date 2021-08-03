@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/* 共通部分 */
+html {
+    color: #111111;
+}
+
+/* wrapper */
+.wrapper {
+    margin: 2%;
+}
+
+/* 中央寄せ */
+.main {
+        text-align: center;
+}
+
+table,
+th,
+td {
+    margin: 2% auto;
+    border: solid 1px #111111;
+}
+
+/* 見出し */
+h1,
+h2 {
+    font-family: 'Merriweather', serif;
+}
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 25px;
+}
+
+/* テキスト左揃え */
+.text {
+    margin: 2% 15%;
+    display: inline-block;
+    text-align: left;
+}
+
+/* 数字 */
+#specified,
+#timer {
+    font-size: 30px;
+}
+
+/* ボタン */
+#start,
+#stop {
+    border: solid 1px #111111;
+    padding: 0px 5px;
+    font-size: 13px;
+}
+
+/* 難易度セレクト */
+select {
+    color: #111111;
+    border: solid 1px #111111;
+    padding: 0px 18px 0px 5px;
+    background-image: url(../icon.png);
+    background-repeat: no-repeat;
+    background-size: 8px;
+    background-position: right 5px center;
+    font-size: 13px;
+}
+
+/* スコア */
+th,
+td {
+    padding: 0px 5px;
+}
+
+/* 参考 */
+.reference {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10%;
+    font-size: 13px;
+}
